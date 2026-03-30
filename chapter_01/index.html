@@ -1,0 +1,1647 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="에듀플로를 처음 사용하는 교사들을 위한 소개 및 실습 가이드">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../chapter_02/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>왜 AI로 교재를 만들까? — 교사의 직관과 AI의 생산성 - 에듀플로 소개 및 사용 가이드</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ai-ai" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="에듀플로 소개 및 사용 가이드" class="md-header__button md-logo" aria-label="에듀플로 소개 및 사용 가이드" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            에듀플로 소개 및 사용 가이드
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              왜 AI로 교재를 만들까? — 교사의 직관과 AI의 생산성
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="공유" aria-label="공유" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  왜 AI로 교재를 만들까? — 교사의 직관과 AI의 생산성
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chapter_02/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  에듀플로 한눈에 보기 — 8단계 워크플로우와 4축 템플릿
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chapter_03/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Step 0 · 프로젝트 관리 — 교재 정보 입력과 템플릿 선택
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chapter_04/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Step 1 · 방향성 논의 — AI와 대화하며 교재 방향 잡기
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chapter_05/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Step 2 · 목차 작성 — AI가 제안하고 교사가 다듬는 구조 설계
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chapter_06/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Step 3 · 피드백 & 확정 — 목차를 꼼꼼히 다듬고 확정하기
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chapter_07/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Step 4 · 챕터 제작 — AI와 함께 본문 쓰기와 실시간 개입
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chapter_08/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Step 5 · 교육 평가 — AI가 분석하는 가독성·인지부하·동기부여·정확성
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chapter_09/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Step 6 · 인터랙티브 — 다이어그램·이미지·퀴즈로 교재에 생명 불어넣기
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chapter_10/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Step 7 · 배포 & 그 너머 — 교재 배포, 교재 DNA, 그리고 동료 리뷰
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="에듀플로 소개 및 사용 가이드" class="md-nav__button md-logo" aria-label="에듀플로 소개 및 사용 가이드" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    에듀플로 소개 및 사용 가이드
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    왜 AI로 교재를 만들까? — 교사의 직관과 AI의 생산성
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    왜 AI로 교재를 만들까? — 교사의 직관과 AI의 생산성
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        이 챕터에서 배울 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        도입 — 선생님의 책상 위, 그 익숙한 풍경
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        본문
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="본문">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 교재 제작, 왜 이렇게 어려울까?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 교사의 직관 + AI의 생산성 = 더 나은 교재
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 에듀플로는 무엇인가
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 핵심 철학 — 점진적 시각화
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 에듀플로의 8단계 워크플로우 — 전체 그림 먼저 보기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. "그래서 AI가 다 해 주는 건가요?" — 자주 묻는 질문
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        실습 — 에듀플로 회원가입과 인터페이스 둘러보기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="실습 — 에듀플로 회원가입과 인터페이스 둘러보기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        실습 1: 회원가입하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        실습 2: 메인 화면 둘러보기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        실습 3: 새 프로젝트 생성 화면 미리 보기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        정리
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="정리">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 다음 챕터 미리보기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        확인 문제
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    에듀플로 한눈에 보기 — 8단계 워크플로우와 4축 템플릿
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 0 · 프로젝트 관리 — 교재 정보 입력과 템플릿 선택
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 1 · 방향성 논의 — AI와 대화하며 교재 방향 잡기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 2 · 목차 작성 — AI가 제안하고 교사가 다듬는 구조 설계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 3 · 피드백 & 확정 — 목차를 꼼꼼히 다듬고 확정하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 4 · 챕터 제작 — AI와 함께 본문 쓰기와 실시간 개입
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 5 · 교육 평가 — AI가 분석하는 가독성·인지부하·동기부여·정확성
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 6 · 인터랙티브 — 다이어그램·이미지·퀴즈로 교재에 생명 불어넣기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 7 · 배포 & 그 너머 — 교재 배포, 교재 DNA, 그리고 동료 리뷰
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        이 챕터에서 배울 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        도입 — 선생님의 책상 위, 그 익숙한 풍경
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        본문
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="본문">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 교재 제작, 왜 이렇게 어려울까?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 교사의 직관 + AI의 생산성 = 더 나은 교재
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 에듀플로는 무엇인가
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 핵심 철학 — 점진적 시각화
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 에듀플로의 8단계 워크플로우 — 전체 그림 먼저 보기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. "그래서 AI가 다 해 주는 건가요?" — 자주 묻는 질문
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        실습 — 에듀플로 회원가입과 인터페이스 둘러보기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="실습 — 에듀플로 회원가입과 인터페이스 둘러보기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        실습 1: 회원가입하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        실습 2: 메인 화면 둘러보기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        실습 3: 새 프로젝트 생성 화면 미리 보기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        정리
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="정리">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 다음 챕터 미리보기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        확인 문제
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ai-ai">왜 AI로 교재를 만들까? — 교사의 직관과 AI의 생산성<a class="headerlink" href="#ai-ai" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="_1">이 챕터에서 배울 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>교재 제작 과정에서 교사들이 겪는 현실적인 어려움을 구체적으로 파악합니다.</li>
+<li>"교사는 창작자, AI는 도구"라는 협업 모델의 의미를 이해합니다.</li>
+<li>에듀플로의 핵심 철학인 <strong>점진적 시각화</strong>가 왜 중요한지 비유를 통해 설명할 수 있습니다.</li>
+<li>에듀플로에 회원가입하고 기본 인터페이스를 직접 둘러봅니다.</li>
+</ul>
+<hr />
+<h2 id="_2">도입 — 선생님의 책상 위, 그 익숙한 풍경<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>토요일 오후, 다음 주 수업에 쓸 학습지를 만들려고 노트북을 켭니다. 머릿속에는 "이번에는 학생들이 진짜 이해할 수 있게 만들어야지"라는 의지가 가득합니다. 그런데 빈 화면 앞에 앉으면 막막합니다. 목차를 어떻게 잡을지, 설명을 어디까지 써야 할지, 그림은 어디서 가져올지. 한 시간이 지나도 1페이지를 벗어나지 못합니다.</p>
+<p>혹시 이런 경험, 있으신가요?</p>
+<p>사실 이것은 선생님의 능력 문제가 아닙니다. 교재를 만드는 일은 <strong>수업 설계, 글쓰기, 편집 디자인, 시각화</strong>라는 전혀 다른 네 가지 전문 역량을 동시에 요구하기 때문입니다. 수업은 잘하는데 교재 만들기가 어렵다면, 그건 당연한 일입니다.</p>
+<p>이 챕터에서는 그 어려움을 정면으로 마주하고, AI라는 새로운 도구가 어떻게 도움이 되는지 살펴봅니다. 걱정하지 마세요. AI를 전혀 몰라도 괜찮습니다. 이 교재 자체가 에듀플로로 만들어졌으니까요.</p>
+<p><img alt="A teacher sitting at a desk with a laptop, staring at a blank screen. Sticky notes and textbooks are scattered around. The scene conveys a warm, relatable feeling of creative struggle. Illustration style, soft colors." src="../images/7022d52e6da34167adebe2ee2ca8d872_img1.png" /></p>
+<hr />
+<h2 id="_3">본문<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. 교재 제작, 왜 이렇게 어려울까?<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>교재를 직접 만들어 본 선생님이라면 아마 이런 벽에 부딪혀 보셨을 것입니다.</p>
+<table>
+<thead>
+<tr>
+<th>벽의 이름</th>
+<th>구체적인 상황</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⏰ 시간의 벽</td>
+<td>챕터 하나 쓰는 데 반나절, 전체 교재는 엄두가 안 남</td>
+</tr>
+<tr>
+<td>🎨 시각화의 벽</td>
+<td>다이어그램이나 삽화를 넣고 싶지만 도구를 다루기 어려움</td>
+</tr>
+<tr>
+<td>📐 구조화의 벽</td>
+<td>머릿속 지식은 많은데, 학생 눈높이의 목차로 정리가 안 됨</td>
+</tr>
+<tr>
+<td>🔄 수정의 벽</td>
+<td>한 곳을 고치면 다른 곳도 연쇄 수정, 끝이 없음</td>
+</tr>
+</tbody>
+</table>
+<p>이 네 가지 벽의 공통점이 있습니다. <strong>선생님의 교육적 판단과는 무관한, 순전히 "제작 기술"의 문제</strong>라는 것입니다.</p>
+<p>수업 시간에 칠판 앞에서 설명할 때는 막힘이 없습니다. "여기서 이 개념이 중요해", "이 부분은 학생들이 항상 헷갈려 하지", "이 예시를 들면 바로 이해해" — 이런 판단은 선생님만이 할 수 있습니다. 오랜 교실 경험에서 나온, 말로 설명하기 어려운 직관입니다.</p>
+<p>문제는 그 직관을 <strong>문서 형태로 옮기는 과정</strong>에서 생깁니다. 글을 쓰고, 배치하고, 그림을 그리고, 서식을 맞추는 일은 교사의 전문 영역이 아닙니다. 바로 이 지점에서 AI가 역할을 합니다.</p>
+<hr />
+<h3 id="2-ai">2. 교사의 직관 + AI의 생산성 = 더 나은 교재<a class="headerlink" href="#2-ai" title="Permanent link">&para;</a></h3>
+<p>AI로 교재를 만든다고 하면, 흔히 두 가지 오해가 생깁니다.</p>
+<blockquote>
+<p><strong>오해 1.</strong> "AI한테 '교재 만들어 줘' 하면 뚝딱 나오는 거 아니야?"
+<strong>오해 2.</strong> "결국 AI가 다 해 주면, 교사의 역할은 뭐가 남지?"</p>
+</blockquote>
+<p>두 가지 모두 핵심을 놓치고 있습니다.</p>
+<p>AI는 글을 빠르게 생성할 수 있지만, <strong>무엇이 교육적으로 의미 있는지는 모릅니다.</strong> "이 개념 다음에 저 개념을 배워야 한다"는 순서, "이 예시가 학생에게 더 와닿는다"는 감각, "여기서 쉬어가야 학생들이 지치지 않는다"는 리듬 — 이 모든 것은 교사만이 판단할 수 있습니다.</p>
+<p>반대로, 교사는 교육적 판단에는 탁월하지만 <strong>그 판단을 빠르게 문서화하는 것은 어렵습니다.</strong> 이것이 바로 "교사의 직관 + AI의 생산성"이 만나야 하는 이유입니다.</p>
+<div class="mermaid">flowchart LR
+    A["🧑‍🏫 교사의 직관"] --&gt; C["📖 더 나은 교재"]
+    B["🤖 AI의 생산성"] --&gt; C
+
+    A -.- D["수업 경험&lt;br/&gt;학생 이해&lt;br/&gt;교육적 판단"]
+    B -.- E["빠른 글 생성&lt;br/&gt;시각화 제작&lt;br/&gt;구조화 지원"]
+
+    style A fill:#4A90D9,stroke:#2E6BA6,color:#FFFFFF
+    style B fill:#7B68EE,stroke:#5A4FC4,color:#FFFFFF
+    style C fill:#2ECC71,stroke:#27AE60,color:#FFFFFF
+    style D fill:#E8F4FD,stroke:#4A90D9,color:#333333
+    style E fill:#EDE7F6,stroke:#7B68EE,color:#333333</div>
+<p>이 협업 모델에서 가장 중요한 원칙이 있습니다.</p>
+<blockquote>
+<p><strong>교사는 창작자이고, AI는 도구입니다. 모든 결정은 교사가 내립니다.</strong></p>
+</blockquote>
+<p>이것은 에듀플로 헌법 제1조 "교사 주권"에 해당하는 내용입니다. AI가 초안을 만들어도, 그것을 수업에 쓸지 말지, 어떻게 고칠지는 전적으로 선생님의 몫입니다. 마치 요리사가 믹서기를 사용하듯, 도구를 쓰되 요리의 맛은 요리사가 결정하는 것과 같습니다.</p>
+<hr />
+<h3 id="3">3. 에듀플로는 무엇인가<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p><strong>에듀플로(EduFlow)</strong>는 교사의 수업 아이디어를 체계적인 교육자료로 바꿔 주는 AI 기반 플랫폼입니다.</p>
+<p>이름을 풀어 보면, "에듀(Education)" + "플로(Flow)"입니다. 교육 콘텐츠가 물 흐르듯 만들어진다는 뜻이지요. 처음에는 흐릿했던 아이디어가 한 단계를 거칠 때마다 조금씩 선명해지고, 마지막에는 학생에게 바로 전달할 수 있는 완성된 교재가 됩니다.</p>
+<p>에듀플로의 사명은 간단합니다.</p>
+<blockquote>
+<p>선생님 머릿속의 생각을 <strong>완벽하게 정리</strong>하고, 그것을 <strong>학생이 이해하기 쉬운 시각적 형태로 구현</strong>하는 것.</p>
+</blockquote>
+<p>이 과정에서 AI는 대화를 통해 선생님의 생각을 끌어내고, 선생님은 AI가 만든 결과물을 검토하고 수정합니다. 최종 결과물은 단순히 "AI가 만든 문서"가 아니라, <strong>교사의 교육적 판단이 담긴 교재</strong>가 됩니다.</p>
+<hr />
+<h3 id="4">4. 핵심 철학 — 점진적 시각화<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p>에듀플로에서 가장 중요한 개념 하나를 꼽으라면 <strong>점진적 시각화</strong>입니다.</p>
+<p>이것을 이해하기 위해, 사진 인화 과정을 떠올려 보세요. 필름 카메라 시절, 암실에서 인화지를 현상액에 담그면 처음에는 아무것도 보이지 않습니다. 시간이 지나면 윤곽이 나타나고, 조금 더 지나면 형체가 드러나고, 마침내 선명한 사진이 완성됩니다.</p>
+<p>에듀플로의 교재 제작도 이와 같습니다. 처음부터 완성된 교재를 만들지 않습니다. <strong>안개 속에서 시작해서, 단계마다 조금씩 선명해지는 과정</strong>을 거칩니다.</p>
+<div class="mermaid">flowchart LR
+    S1["🌫️ Step 1&lt;br/&gt;안개&lt;br/&gt;막연한 아이디어"] --&gt; S2["🦴 Step 2&lt;br/&gt;윤곽&lt;br/&gt;목차가 잡힌다"]
+    S2 --&gt; S3["🔍 Step 3&lt;br/&gt;구조&lt;br/&gt;교사가 다듬는다"]
+    S3 --&gt; S4["✍️ Step 4&lt;br/&gt;본문&lt;br/&gt;글이 채워진다"]
+    S4 --&gt; S5["📊 Step 5&lt;br/&gt;품질&lt;br/&gt;AI가 검증한다"]
+    S5 --&gt; S6["🎨 Step 6&lt;br/&gt;생명&lt;br/&gt;시각화가 들어간다"]
+    S6 --&gt; S7["🎓 Step 7&lt;br/&gt;완성&lt;br/&gt;학생에게 전달"]
+
+    style S1 fill:#E0E0E0,stroke:#9E9E9E,color:#555555
+    style S2 fill:#C8D8E8,stroke:#7A9BBD,color:#333333
+    style S3 fill:#A8C8D8,stroke:#5A8FAA,color:#333333
+    style S4 fill:#88B8C8,stroke:#4A7F99,color:#FFFFFF
+    style S5 fill:#68A8B8,stroke:#3A6F88,color:#FFFFFF
+    style S6 fill:#489888,stroke:#2A5F55,color:#FFFFFF
+    style S7 fill:#2ECC71,stroke:#27AE60,color:#FFFFFF</div>
+<p><strong>왜 이렇게 단계를 나눌까요?</strong></p>
+<p>이유는 단순합니다. 처음부터 완성품을 만들면, 방향이 틀렸을 때 전부 버려야 합니다.</p>
+<p>건축에 비유하면, 설계도 없이 바로 벽돌을 쌓는 것과 같습니다. 3층까지 올렸는데 "아, 계단 위치를 바꿔야 해"라는 걸 깨달으면? 다 부수고 다시 지어야 합니다. 하지만 설계 단계에서 발견했다면? 도면 위에 선 하나만 옮기면 됩니다.</p>
+<p>에듀플로에서도 마찬가지입니다. 목차 단계에서 "3장과 4장 순서를 바꿔야겠다"고 판단하면, 클릭 몇 번이면 됩니다. 그래서 매 단계마다 선생님이 확인하고, 방향을 조정할 수 있는 구조로 설계되어 있습니다.</p>
+<blockquote>
+<p>📌 <strong>기억해 두세요</strong>: 에듀플로는 "완성품을 한 번에 뽑는 기계"가 아닙니다. "선생님과 대화하며 함께 만들어가는 동료"에 가깝습니다.</p>
+</blockquote>
+<hr />
+<h3 id="5-8">5. 에듀플로의 8단계 워크플로우 — 전체 그림 먼저 보기<a class="headerlink" href="#5-8" title="Permanent link">&para;</a></h3>
+<p>점진적 시각화가 실제로 어떻게 구현되는지, 에듀플로의 전체 작업 흐름을 간단히 살펴봅니다. 지금은 "아, 이런 단계들이 있구나" 정도만 파악하면 충분합니다. 각 단계의 자세한 사용법은 다음 챕터들에서 하나씩 다루겠습니다.</p>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>이름</th>
+<th>하는 일</th>
+<th>비유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Step 0</td>
+<td>프로젝트 설정</td>
+<td>교재 제목, 교과, 학년 입력</td>
+<td>요리 재료 준비</td>
+</tr>
+<tr>
+<td>Step 1</td>
+<td>방향성 논의</td>
+<td>AI와 대화하며 교재 방향 결정</td>
+<td>레시피 구상</td>
+</tr>
+<tr>
+<td>Step 2</td>
+<td>목차 작성</td>
+<td>AI가 대화 기반으로 목차 생성</td>
+<td>요리 순서 정하기</td>
+</tr>
+<tr>
+<td>Step 3</td>
+<td>피드백 &amp; 확정</td>
+<td>목차를 교사가 검토·수정</td>
+<td>레시피 최종 확인</td>
+</tr>
+<tr>
+<td>Step 4</td>
+<td>챕터 제작</td>
+<td>AI가 본문 생성, 교사가 개입</td>
+<td>실제 요리 시작</td>
+</tr>
+<tr>
+<td>Step 5</td>
+<td>교육 평가</td>
+<td>AI가 품질을 자동 분석</td>
+<td>간 보기</td>
+</tr>
+<tr>
+<td>Step 6</td>
+<td>인터랙티브</td>
+<td>다이어그램, 이미지, 퀴즈 추가</td>
+<td>플레이팅</td>
+</tr>
+<tr>
+<td>Step 7</td>
+<td>배포</td>
+<td>웹사이트나 문서로 학생에게 전달</td>
+<td>서빙</td>
+</tr>
+</tbody>
+</table>
+<p>요리 비유가 잘 맞는 이유가 있습니다. 좋은 요리사는 레시피를 먼저 확인하고, 재료를 손질하고, 중간에 간을 보며 조정합니다. "재료를 다 넣고 한 시간 뒤에 뚜껑을 열어 보자"는 식으로 요리하지 않지요. 교재 제작도 같습니다. <strong>매 단계에서 확인하고 조정하는 것</strong>이 핵심입니다.</p>
+<p><img alt="An infographic showing 8 steps of EduFlow workflow arranged as a horizontal pipeline. Each step is represented by a simple icon: gear, chat bubble, list, checkmark, document, chart, palette, rocket. Soft gradient colors from left to right indicating progression. Clean, modern educational illustration style." src="../images/7022d52e6da34167adebe2ee2ca8d872_img2.png" /></p>
+<hr />
+<h3 id="6-ai">6. "그래서 AI가 다 해 주는 건가요?" — 자주 묻는 질문<a class="headerlink" href="#6-ai" title="Permanent link">&para;</a></h3>
+<p>새로운 도구를 처음 접할 때 드는 솔직한 궁금증들을 정리했습니다.</p>
+<p><strong>Q. AI가 만든 교재는 신뢰할 수 있나요?</strong></p>
+<p>AI가 생성한 내용에는 사실과 다른 정보가 포함될 수 있습니다. 에듀플로에서는 Step 5 "교육 평가" 단계에서 정확성을 자동 검증하고, 동료 교사의 리뷰 시스템도 갖추고 있습니다. 하지만 <strong>최종 검증은 반드시 선생님의 몫</strong>입니다. 도구가 편리해도, 전문가의 눈을 대체하지는 못합니다.</p>
+<p><strong>Q. AI를 써 본 적이 전혀 없는데 괜찮을까요?</strong></p>
+<p>괜찮습니다. 에듀플로는 AI 전문 지식이 없어도 사용할 수 있도록 설계되어 있습니다. 채팅창에 한국어로 자연스럽게 이야기하면 됩니다. "프로그래밍을 처음 배우는 고등학생 대상 교재를 만들고 싶어요"처럼요.</p>
+<p><strong>Q. 만든 교재의 저작권은 누구에게 있나요?</strong></p>
+<p>선생님에게 있습니다. AI는 도구이고, 교육적 기획과 판단을 한 사람은 선생님입니다. 에듀플로는 교재 제작 전 과정을 "교재 DNA"로 기록하기 때문에, 누가 어떤 결정을 내렸는지 투명하게 확인할 수 있습니다.</p>
+<p><strong>Q. 기존에 만들어 둔 자료가 있는데 활용할 수 있나요?</strong></p>
+<p>네, Step 1에서 PDF, HWP, DOCX 등의 파일을 업로드하면 AI가 내용을 반영합니다. 기존 자료를 바탕으로 더 체계적인 교재로 발전시킬 수 있습니다.</p>
+<hr />
+<h2 id="_4">실습 — 에듀플로 회원가입과 인터페이스 둘러보기<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>이론은 여기까지입니다. 이제 직접 에듀플로에 접속해 봅시다. 5분이면 충분합니다.</p>
+<h3 id="1_1">실습 1: 회원가입하기<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<p><strong>소요시간</strong>: 약 2분</p>
+<ol>
+<li>웹 브라우저에서 에듀플로 사이트에 접속합니다.</li>
+<li>화면 중앙의 <strong>"Google 계정으로 시작하기"</strong> 버튼을 클릭합니다.</li>
+<li>사용할 Google 계정을 선택합니다. (학교 계정 또는 개인 계정 모두 가능)</li>
+<li>간단한 프로필 정보를 확인하고 "시작하기"를 클릭합니다.</li>
+</ol>
+<blockquote>
+<p>💡 <strong>팁</strong>: 학교에서 사용하는 Google Workspace 계정으로 가입하면, 나중에 동료 교사와 협업할 때 편리합니다.</p>
+</blockquote>
+<h3 id="2">실습 2: 메인 화면 둘러보기<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>회원가입이 끝나면 대시보드가 나타납니다. 아직 아무 프로젝트도 없는 깨끗한 화면일 것입니다. 다음 요소들을 눈으로 확인해 보세요.</p>
+<div class="mermaid">flowchart TD
+    A["🏠 대시보드"] --&gt; B["📁 내 프로젝트 목록&lt;br/&gt;앞으로 만들 교재들이&lt;br/&gt;여기 표시됩니다"]
+    A --&gt; C["➕ 새 프로젝트 만들기&lt;br/&gt;교재 제작의 시작점"]
+    A --&gt; D["👤 프로필 / 설정&lt;br/&gt;계정 정보 확인"]
+
+    style A fill:#4A90D9,stroke:#2E6BA6,color:#FFFFFF
+    style B fill:#F5F5F5,stroke:#CCCCCC,color:#333333
+    style C fill:#2ECC71,stroke:#27AE60,color:#FFFFFF
+    style D fill:#F5F5F5,stroke:#CCCCCC,color:#333333</div>
+<p><strong>확인 포인트:</strong>
+- [ ] "새 프로젝트 만들기" 버튼의 위치를 찾았나요?
+- [ ] 프로필 영역에서 자신의 이름이 표시되나요?
+- [ ] 프로젝트 목록 영역이 비어 있는 것을 확인했나요?</p>
+<h3 id="3_1">실습 3: 새 프로젝트 생성 화면 미리 보기<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<p>"새 프로젝트 만들기" 버튼을 클릭해 보세요. 아직 실제로 프로젝트를 만들지는 않을 것입니다. 어떤 정보를 입력해야 하는지만 확인합니다.</p>
+<p>입력해야 할 항목은 다음과 같습니다.</p>
+<ul>
+<li><strong>교재 제목</strong>: 만들고 싶은 교재의 이름</li>
+<li><strong>교과</strong>: 어떤 과목인지</li>
+<li><strong>대상 학년</strong>: 누구를 위한 교재인지</li>
+<li><strong>4축 템플릿</strong>: 교재의 성격을 정하는 네 가지 선택</li>
+</ul>
+<p>4축 템플릿이 무엇인지는 다음 챕터에서 자세히 다룹니다. 지금은 "교재를 만들기 전에 성격을 먼저 정하는 과정이 있구나" 정도만 기억해 두세요.</p>
+<p>화면을 충분히 둘러보았으면, 뒤로가기를 눌러 대시보드로 돌아옵니다.</p>
+<blockquote>
+<p>⚠️ <strong>주의</strong>: 아직 프로젝트를 실제로 생성하지 않아도 됩니다. 다음 챕터에서 함께 만들어 볼 예정입니다.</p>
+</blockquote>
+<p><img alt="A clean screenshot-style mockup of the EduFlow dashboard interface showing an empty project list, a prominent &quot;Create New Project&quot; button in green, and a simple navigation bar at the top. Modern, minimal UI design with soft shadows and rounded corners." src="../images/7022d52e6da34167adebe2ee2ca8d872_img3.png" /></p>
+<hr />
+<h2 id="_5">정리<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>이 챕터에서 다룬 핵심 내용을 세 가지로 요약합니다.</p>
+<ol>
+<li>
+<p><strong>교재 제작이 어려운 이유는 교육 역량의 문제가 아니라 제작 기술의 문제입니다.</strong> AI는 바로 그 제작 기술 부분을 도와주는 도구입니다.</p>
+</li>
+<li>
+<p><strong>교사는 창작자, AI는 도구입니다.</strong> 무엇을 가르칠지, 어떤 순서로, 어떤 예시를 쓸지는 선생님이 결정합니다. AI는 그 결정을 빠르게 문서화하고 시각화하는 역할을 합니다.</p>
+</li>
+<li>
+<p><strong>에듀플로는 "점진적 시각화" 방식으로 교재를 만듭니다.</strong> 안개처럼 흐릿한 아이디어에서 출발해, 단계마다 조금씩 선명해지며, 매 단계에서 선생님이 방향을 확인하고 조정합니다.</p>
+</li>
+</ol>
+<hr />
+<h3 id="_6">📝 다음 챕터 미리보기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>다음 챕터에서는 실제로 프로젝트를 생성하고, 에듀플로의 <strong>4축 템플릿</strong>이 무엇인지 알아봅니다. "교과서형, 워크숍형, 스토리텔링형…" 같은 교재 유형을 선택하면 목차 구조와 문체가 어떻게 달라지는지 직접 확인해 봅니다.</p>
+<hr />
+<h2 id="_7">확인 문제<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>스스로 점검해 보세요. 부담 없이 마음속으로 답해 보면 됩니다.</p>
+<p><strong>1.</strong> 교재 제작에서 AI가 잘하는 영역과 교사가 잘하는 영역을 각각 하나씩 이야기해 보세요.</p>
+<details>
+<summary>예시 답안 보기</summary>
+
+AI가 잘하는 영역: 빠른 글 생성, 다이어그램 제작, 문서 구조화 등 제작 기술 영역.
+교사가 잘하는 영역: 학생 수준에 맞는 설명 순서 판단, 효과적인 예시 선정, 수업 리듬 설계 등 교육적 판단 영역.
+
+</details>
+
+<p><strong>2.</strong> 에듀플로의 "점진적 시각화"가 왜 필요한지, 한 문장으로 설명해 보세요.</p>
+<details>
+<summary>예시 답안 보기</summary>
+
+처음부터 완성품을 만들면 방향이 틀렸을 때 전부 버려야 하지만, 단계별로 진행하면 매 단계에서 교사가 방향을 확인하고 수정할 수 있기 때문입니다.
+
+</details>
+
+<p><strong>3.</strong> 에듀플로에서 "교사 주권"이란 어떤 의미인가요?</p>
+<details>
+<summary>예시 답안 보기</summary>
+
+AI가 아무리 좋은 초안을 생성해도, 그것을 사용할지, 어떻게 수정할지에 대한 모든 결정은 교사가 내린다는 원칙입니다.
+
+</details>
+
+<p><strong>4.</strong> 에듀플로 회원가입은 어떤 방법으로 하나요?</p>
+<details>
+<summary>예시 답안 보기</summary>
+
+Google 계정으로 가입합니다. (Google OAuth 방식)
+
+</details>
+
+<hr />
+<blockquote>
+<p>🎉 <strong>수고하셨습니다!</strong> 첫 챕터를 마쳤습니다. 에듀플로에 가입하고, 대시보드를 둘러보는 것만으로도 훌륭한 첫걸음입니다. 다음 챕터에서 본격적으로 교재 만들기를 시작합니다.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="하단/푸터" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="이전: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                이전
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../chapter_02/" class="md-footer__link md-footer__link--next" aria-label="다음: 에듀플로 한눈에 보기 — 8단계 워크플로우와 4축 템플릿">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                다음
+              </span>
+              <div class="md-ellipsis">
+                에듀플로 한눈에 보기 — 8단계 워크플로우와 4축 템플릿
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © EduFlow 2 AI 교육자료 생성 플랫폼
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.indexes", "navigation.instant", "navigation.path", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+      
+        <script src="../javascripts/mermaid-init.js"></script>
+      
+        <script src="../javascripts/lightbox.js"></script>
+      
+    
+  </body>
+</html>
